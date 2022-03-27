@@ -33,6 +33,11 @@ public class PigeonTwo extends Gyroscope {
         return 0; // TODO
     }
 
+    @Override
+    public void setSimAngle(Rotation2 angle) {
+        pigeon.getSimCollection().setRawHeading(angle.toDegrees());
+    }
+
     public double getAxis(Axis axis) {
         double[] ypr = new double[3];
         pigeon.getYawPitchRoll(ypr);

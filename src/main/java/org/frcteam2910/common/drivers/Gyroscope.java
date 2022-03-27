@@ -46,4 +46,6 @@ public abstract class Gyroscope {
 
 		return rate;
 	}
+
+	public abstract void setSimAngle(Rotation2 angle);
 }

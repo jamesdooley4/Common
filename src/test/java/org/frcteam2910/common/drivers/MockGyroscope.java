@@ -23,6 +23,11 @@ public final class MockGyroscope extends Gyroscope {
 		return unadjustedRate;
 	}
 
+	@Override
+	public void setSimAngle(Rotation2 angle) {
+		unadjustedAngle = angle;
+	}
+
 	public void setUnadjustedRate(double unadjustedRate) {
 		this.unadjustedRate = unadjustedRate;
 	}
